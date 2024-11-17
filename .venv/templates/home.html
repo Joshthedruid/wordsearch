@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+   <body>
+        <h2>Word List</h2>
+        <textarea id="wordlist" name="wordlist" rows="4" cols="50" form="wsform">
+        Insert words here each on separate lines.
+        </textarea>
+        
+        <form method="post" id="wsform">
+
+        <h2>Letter Fill Options</h2>
+        <input type="radio" id="normal" name="letter_fill" value="normal" checked="checked">
+        <label for="normal">Letters filled at random</label><br>
+        <input type="radio" id="rares" name="letter_fill" value="rares">
+        <label for="rares">Avoid rare letters</label><br>
+        <input type="radio" id="smart" name="letter_fill" value="smart">
+        <label for="smart">Letters filled by English distribution frequency</label><br>
+        <input type="radio" id="inclusive" name="letter_fill" value="inclusive">
+        <label for="inclusive">Only use letters present in the word list</label>
+        <p><input type="submit" value="submit"/></p>
+
+        </form>
+        
+        
+   </body>
+</html>
